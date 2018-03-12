@@ -34,7 +34,7 @@ function Get-LoggedIn {
 function Get-Uptime {
     [CmdletBinding()]
     param (
-        [Parameter(ValueFromRemainingArguments=$true)][string[]]$ComputerName = {'localhost'}
+        [Parameter(ValueFromRemainingArguments=$true)][string[]]$ComputerName = {localhost}
     )
     
     foreach ($Computer in $ComputerName){
